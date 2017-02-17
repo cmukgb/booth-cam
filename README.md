@@ -4,9 +4,10 @@ Small webpage to focus the CMU Spring Carnival camera on KGB's booth
 This repo holds the two html files for the KGB booth cam page. One is for the
 live cam during carnival and one is for the timelapse posted the rest of the
 year. The appropriate page should be symliked to by booth.html in the parent
-directory on the web server. That page is at cmukgb.org/activities/booth.html
-and booth.cmukgb.org. This pages is embedded on the WordPress site at
-cmukgb.org/booth to make it look prettier.
+directory on the web server. That page is at
+http://cmukgb.org/activities/booth.html and http://booth.cmukgb.org. This pages
+is embedded on the WordPress site at http://cmukgb.org/booth to make it look
+prettier.
 
 To keep this up to date:
 * Update the Facebook link on the WordPress site each year.
@@ -20,8 +21,8 @@ To keep this up to date:
   and one place in the timelapse page.
 * Update the video source. In both pages, change the youtube link to this
   year’s link. You can search for “youtube” to find what to change. Get this
-  year’s link from carnival.activitiesboard.org. Make sure autoplay is on.
-  Also, if Spring Carnival Committee (or AB Tech) keeps hosting the
+  year’s link from http://carnival.activitiesboard.org. Make sure autoplay is
+  on.  Also, if Spring Carnival Committee (or AB Tech) keeps hosting the
   non-youtube, image-based version, update that link too. You may not have to
   change anything because the current link is
   http://carnival.activitiesboard.org/image.jpg which seems future-proof.
