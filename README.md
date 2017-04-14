@@ -11,6 +11,8 @@ prettier.
 
 To keep this up to date:
 * Update the Facebook link on the WordPress site each year.
+* Update the header on the WordPress site before and after Carnival. You can
+  see the revision history to see what it was set to for past Carnivals.
 * Switch the symlink to live before build week and back after Carnival.
 * Update the video dimensions. In both the timelapse and the live page, change
   the “top” and “left” attributes on the video. The easiest way to find them is
