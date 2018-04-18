@@ -30,4 +30,12 @@ To keep this up to date:
   non-youtube, image-based version, update that link too. You may not have to
   change anything because the current link is
   http://carnival.activitiesboard.org/image.jpg which seems future-proof.
+  * Update 2018: Well I guess I spoke too soon. Currently,
+    http://activitiesboard.org is having issues, so there is no still image.
+    You can get the live video from http://springcarnival.org. I am leaving the
+    above in case things get fixed in the future. - Murphy
+  * Further Update 2018: Apparently we aren't allowed to embed the YouTube
+    video, so screw it all, I guess. Hopefully this changes soon. For now, I
+    commented the relevant parts and added a message instead of the video.
+    - Murphy
 
