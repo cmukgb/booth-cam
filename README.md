@@ -37,5 +37,5 @@ To keep this up to date:
   * Further Update 2018: Apparently we aren't allowed to embed the YouTube
     video, so screw it all, I guess. Hopefully this changes soon. For now, I
     commented the relevant parts and added a message instead of the video.
-    - Murphy
+    \- Murphy
 
