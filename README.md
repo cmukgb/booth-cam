@@ -3,11 +3,14 @@ Small webpage to focus the CMU Spring Carnival camera on KGB's booth
 
 This repo holds the two html files for the KGB booth cam page. One is for the
 live cam during carnival and one is for the timelapse posted the rest of the
-year. The appropriate page should be symliked to by booth.html in the parent
-directory on the web server. That page is at
-http://cmukgb.org/activities/booth.html and http://booth.cmukgb.org. This pages
-is embedded on the WordPress site at http://cmukgb.org/booth to make it look
-prettier.
+year. The appropriate page should be symliked to by index.html in the
+`/var/www/booth-cam` directory on the web server.
+
+That page is accessible at http://booth.cmukgb.org.
+In the past, this page has been embedded on the 2013 WordPress site at
+https://www.cmukgb.org/2013/?page_id=92 to make it look prettier.
+Something similar could be done with https://www.cmukgb.org/booth/
+on the 2019 version of the site.
 
 To keep this up to date:
 * Update the Facebook link on the WordPress site each year.
@@ -38,4 +41,7 @@ To keep this up to date:
     video, so screw it all, I guess. Hopefully this changes soon. For now, I
     commented the relevant parts and added a message instead of the video.
     \- Murphy
-
+  * Update 2020-12-05: I finally moved this over to the new webserver.  The
+    aforementioned embedding issues were fixed with Spring Carnival Committee
+    for 2019, so this should be able to work again once KGBooth returns.
+    \- tparenti
