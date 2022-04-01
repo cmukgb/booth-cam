@@ -24,24 +24,10 @@ To keep this up to date:
   probably to search for “px” or “top” or “left.” They should be some large
   negative value. Unfortunately you just have to use trial and error and keep
   reloading the page in your browser until KGBooth is in frame. Make sure to
-  update these values in two places in the live page (mobile and non-mobile)
-  and one place in the timelapse page.
+  update these values in the live page and in the timelapse page.
 * Update the video source. In both pages, change the youtube link to this
   year’s link. You can search for “youtube” to find what to change. Get this
-  year’s link from http://carnival.activitiesboard.org. Make sure autoplay is
-  on.  Also, if Spring Carnival Committee (or AB Tech) keeps hosting the
-  non-youtube, image-based version, update that link too. You may not have to
-  change anything because the current link is
-  http://carnival.activitiesboard.org/image.jpg which seems future-proof.
-  * Update 2018: Well I guess I spoke too soon. Currently,
-    http://activitiesboard.org is having issues, so there is no still image.
-    You can get the live video from http://springcarnival.org. I am leaving the
-    above in case things get fixed in the future. - Murphy
-  * Further Update 2018: Apparently we aren't allowed to embed the YouTube
-    video, so screw it all, I guess. Hopefully this changes soon. For now, I
-    commented the relevant parts and added a message instead of the video.
-    \- Murphy
-  * Update 2020-12-05: I finally moved this over to the new webserver.  The
-    aforementioned embedding issues were fixed with Spring Carnival Committee
-    for 2019, so this should be able to work again once KGBooth returns.
-    \- tparenti
+  year’s link from https://www.springcarnival.org or their
+  [YouTube account](https://www.youtube.com/channel/UCU9POVg8y6XmdT_seh6nHDA).
+  Make sure autoplay is on and, further, that the mute parameter is set
+  so that autoplay actually works (at least on desktop).
