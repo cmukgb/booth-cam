@@ -6,6 +6,8 @@
     <script
       src="http://www.cmukgb.org/activities/booth-cam/jquery.jcountdown.min.js"
       type="text/javascript" charset="utf-8"></script>
+    <script src="https://www.youtube.com/player_api"
+      type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript">
       $(function(){
         $('#counter').countdown({
@@ -15,17 +17,42 @@
        });
       });
 
-      function loadCam() {
-        document.getElementById("cam").innerHTML="\
-          <iframe width='5760' height='3240'\
-            src='https://www.youtube.com/embed/Mf1OHniN-oE?autoplay=1&mute=1'\
-            frameborder='0'\
-            style='position: absolute; top: -950px; left: -3200px;'>\
-          </iframe>\
-          ";
+      // This code loads the IFrame Player API code asynchronously.
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          width: '5760',
+          height: '3240',
+          videoId: 'Mf1OHniN-oE',
+          playerVars: { 'controls' : 0, 'rel' : 0, 'showinfo' : 0, 'autoplay' : 1, 'mute' : 1 },
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
       }
 
-      window.onload = loadCam;
+      function onPlayerReady(event) {
+        // It may not work for any given device, but it's worth a shot.
+        playVideo();
+      }
+      function onPlayerStateChange(event) {
+        var button = document.getElementById("play-button");
+        if (event.data != YT.PlayerState.PAUSED) {
+          button.innerHTML = "Pause live video";
+          button.onclick = pauseVideo;
+        }
+        else {
+          button.innerHTML = "Resume live video";
+          button.onclick = playVideo;
+        }
+      }
+
+      function playVideo() {
+        player.playVideo();
+      }
+      function pauseVideo() {
+        player.pauseVideo();
+      }
 
     </script>
 
@@ -39,9 +66,9 @@
         sans-serif; display: inline; float: left; margin-top: 60px;
         margin-bottom: -30px; }
       h4 { color: #000000; font-family: sans-serif; padding-left: 30px;
-        padding-top: 100px; float: left;  text-align: left; width: 250px;
+        padding-top: 60px; float: left;  text-align: left; width: 250px;
         margin: 0; }
-      button { font-family: sans-serif; font-size: 14px; }
+      button { font-family: sans-serif; font-size: 20px; padding: 0.5em; }
     </style>
     <style type="text/css"></style>
   </head>
@@ -50,6 +77,11 @@
 
     <div id="cam" style="float: left; width: 700px; height: 700px;
       border: thick solid #666666; overflow: hidden; position: relative;">
+      <iframe id="player" width='5760' height='3240'
+        src='https://www.youtube.com/embed/Mf1OHniN-oE?enablejsapi=1&origin=http://booth.cmukgb.org&controls=0&rel=0&showinfo=0&mute=1'
+        frameborder='0'
+        style='position: absolute; top: -950px; left: -3200px;'>
+      </iframe>
     </div>
 
     <img
@@ -73,6 +105,12 @@
       <a href="https://www.youtube.com/channel/UCU9POVg8y6XmdT_seh6nHDA" target="_blank">YouTube channel</a>.
     </h4>
 
+    <h4 style="font-size:12px">
+      Video may not autoplay on mobile.
+      <button id="play-button" type="button" onclick="playVideo()">
+        Start live video
+      </button>
+    </h4>
 
   </body>
 
